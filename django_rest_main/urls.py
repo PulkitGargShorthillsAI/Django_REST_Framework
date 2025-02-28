@@ -19,5 +19,7 @@ from django.urls import path,include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('students/',include('students.url'))
+    
+    # web application endpoint
+    path('students/',include('students.urls'))
 ]
